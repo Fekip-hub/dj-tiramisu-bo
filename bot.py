@@ -19,6 +19,12 @@ YDL_OPTIONS = {
     "quiet": True,
     "default_search": "ytsearch",
     "extract_flat": False,
+    "extractor_args": {
+        "youtube": {
+            "player_client": ["android", "web"],
+        }
+    },
+    "geo_bypass": True,
 }
 
 FFMPEG_OPTIONS = {
